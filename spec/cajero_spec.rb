@@ -24,4 +24,12 @@ RSpec.describe Cajero do
         cajero = Cajero.new
         expect(cajero.calcular_precio_final(3000,1)).to eq(3000-150)
     end
+    it 'Deberia decolver el precio final aplicando un descuento de 7% por 7 mil productos' do
+        cajero = Cajero.new
+        expect(cajero.calcular_precio_final(7000,1)).to eq(7000-490)
+    end
+    it 'Deberia decolver el precio final aplicando un descuento de 7% por 7 mil productos' do
+        cajero = Cajero.new
+        expect(cajero.calcular_precio_final(7000,1)).to eq(7000-490)
+    end
 end
