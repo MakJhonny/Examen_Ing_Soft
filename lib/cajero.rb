@@ -1,5 +1,8 @@
 class Cajero
     def calcular_precio_final(cantidad, precio_unitario)
+        if(cantidad >= 30000)
+            return cantidad*precio_unitario - cantidad*precio_unitario*0.15
+        end
         if(cantidad >= 10000)
             return cantidad*precio_unitario - cantidad*precio_unitario*0.1
         end
